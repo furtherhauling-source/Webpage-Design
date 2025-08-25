@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Further Hauling</title>
+<style>
+ *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#f5f7fb;color:#0b0b0b}
+ .container{max-width:980px;margin:0 auto;padding:20px}
+ .btn{display:inline-block;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:800;border:2px solid transparent}
+ .btn.red{background:#cf2333;color:#fff}.btn.blue{background:#1f4e79;color:#fff;border-color:#1f4e79}.btn.email{background:#fff;color:#111;border-color:#1f4e79}
+ .btn.email:hover{background:#f1f2f5}.btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+ .center{text-align:center}h1,h2,h3{line-height:1.15;margin:8px 0}p{line-height:1.55;color:#555}
+ .hero{background:url('assets/hero.webp') center/cover no-repeat;padding:26px 0 34px}
+ .hero-card{background:rgba(255,255,255,.88);border:1px solid rgba(0,0,0,.06);border-radius:26px;padding:22px 20px 18px;box-shadow:0 12px 40px rgba(0,0,0,.12)}
+ .hero-card .logo{display:block;margin:6px auto 10px;width:150px;height:auto}
+ .badge-row{display:flex;gap:12px;justify-content:center;color:#333;align-items:center;margin-top:10px;flex-wrap:wrap}
+ .section{padding:30px 0}
+ .review-list{display:grid;gap:12px}.review{background:#f8fafc;border:1px solid #e9eef6;padding:14px;border-radius:16px}
+ .review .stars{color:#f5b301;font-size:1.6rem;margin-bottom:6px}.review .town{font-weight:900;color:#1f4e79;margin-bottom:4px}
+ .owners img{width:100%;border-radius:12px;border:1px solid #e9eef6}
+ .gallery{display:grid;grid-template-columns:1fr;gap:10px;margin-top:10px}.gallery img{width:100%;height:220px;object-fit:cover;border-radius:12px;border:1px solid #e9eef6}
+ @media(min-width:860px){.gallery{grid-template-columns:repeat(2,1fr)}}
+ .form-card{background:#fff;border:1px solid #e9eef6;border-radius:16px;padding:16px;box-shadow:0 8px 24px rgba(0,0,0,.05)}
+ .form-grid{display:grid;gap:12px}label{font-weight:700}input,select,textarea{width:100%;padding:12px;border-radius:12px;border:1px solid #dce2ee;background:#fff;outline:none}
+ input:focus,select:focus,textarea:focus{border-color:#1f4e79;box-shadow:0 0 0 3px rgba(31,78,121,.28)}textarea{min-height:90px}
+ .footer{background:#0e1c2b;color:#dbe7ff;margin-top:30px}.footer a{color:#dbe7ff;text-decoration:underline}
+
+ .who-tiles{display:grid;gap:12px;margin-top:12px}
+ .who-tiles .tile{background:#ffffff;border:1px solid #e9eef6;border-radius:16px;padding:16px}
+ .who-tiles h3{margin:0 0 6px 0;font-size:1.25rem}
+ @media(min-width:760px){.who-tiles{grid-template-columns:repeat(2,minmax(240px,1fr))}}
+
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="container">
+    <div class="hero-card center">
+      <h1>Further Hauling</h1>
+      <img class="logo" src="assets/logo.png" alt="Further Hauling logo">
+      <p><em>“Let us take you further.”</em></p>
+      <p style="font-weight:800;font-size:1.05rem;margin-top:6px">Fast, reliable Conex container transport across the Southeast</p>
+      <p style="margin:4px 0 0 0;font-weight:600;color:#333">📍 Based in Augusta, Georgia</p>
+      <div class="btns">
+        <a class="btn red" href="tel:+17067999923">Call Now</a>
+        <a class="btn blue" href="sms:+17067999923">Text Us</a>
+        <a class="btn email" href="mailto:FurtherHauling@gmail.com">Email Us</a>
+      </div>
+      <div class="badge-row"><span>🇺🇸 Veteran Owned & Operated</span><span>✅ DOT • MC • Fully Insured</span></div>
+    </div>
+  </div>
+</header>
+
+
+<main class="container">
+  <!-- Service Area -->
+  <section class="section" id="service-area">
+    <h2 class="center">Service Area</h2>
+    <div class="state-buttons btns">
+      <a class="btn red" href="#request">Georgia</a>
+      <a class="btn" style="background:#2f66a3;color:#fff" href="#request">South Carolina</a>
+      <a class="btn" style="background:#5a82ba;color:#fff" href="#request">North Carolina</a>
+    </div>
+    <p class="center" style="margin-top:10px">Extended coverage in Tennessee, Alabama, Virginia, and Florida — may require advanced scheduling and additional costs.</p>
+
+    <div class="who-tiles">
+      <div class="tile"><h3>Residential</h3><p>Homes, farms & rural properties.</p></div>
+      <div class="tile"><h3>Construction</h3><p>On-site storage for job sites.</p></div>
+      <div class="tile"><h3>Businesses</h3><p>Retail, warehouses, offices.</p></div>
+      <div class="tile"><h3>Government</h3><p>Schools & public projects.</p></div>
+      <div class="tile"><h3>Veteran Partners</h3><p>Proud to serve with veterans.</p></div>
+    </div>
+
+  </section>
+
+  <section class="section" id="owners">
+    <h2 class="center">Meet the Owners</h2>
+    <div class="owners">
+      <img src="assets/owners.jpg" alt="Justin and Colleen Middleton — Further Hauling">
+      <div class="owner-copy" style="background:#fff;border:1px solid #e9eef6;border-radius:16px;padding:16px">
+        <p><b><h3>Justin Middleton</h3>
+<p>South Georgia born and raised, Justin attended Berry College and brings a steady, hands-on approach to every delivery. He’s the guy who studies the angle before he backs in—tight drives, trees, and slopes don’t scare him. Clear communication and careful placement are his trademarks.</p>
+
+<h3>Colleen Middleton</h3>
+<p>Colleen is a retired military veteran and Georgia police officer with a knack for logistics. She keeps the schedule tight, the paperwork squared away, and the route planned to the minute. As co-owner and operations manager of Further Hauling, she’s your point of contact from first call to final placement.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <h2 class="center">Customer Reviews</h2>
+    <div class="review-list" style="margin-top:10px">
+      <div class="review"><div class="stars">★★★★★</div><div class="town">Blue Ridge, GA</div><p><b>David M.</b></p><p>Even with a <b>tight driveway and limited space</b>, they placed the container exactly where we needed it. Professional and precise.</p></div>
+      <div class="review"><div class="stars">★★★★★</div><div class="town">Asheville, NC</div><p><b>Michael R.</b></p><p>They handled the haul up the <b>narrow, winding mountain roads</b> without issue. Delivery was smooth from start to finish.</p></div>
+      <div class="review"><div class="stars">★★★★★</div><div class="town">Highlands, SC</div><p><b>Sarah L.</b></p><p>They delivered safely even with <b>inclement weather</b> in the area. Great communication and reliable service.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="photos">
+    <h2 class="center">Further in Action</h2>
+    <div class="gallery">
+      <img loading="lazy" src="assets/gal_3.webp" alt="Further Hauling photo"><img loading="lazy" src="assets/gal_4.webp" alt="Further Hauling photo">
+      <img loading="lazy" src="assets/gal_6.webp" alt="Further Hauling photo">
+      <img loading="lazy" src="assets/gal_7.webp" alt="Further Hauling photo">
+        <img loading="lazy" src="images/extra5.webp" alt="Extra delivery photo">
+    </div>
+    <div class="btns" style="margin-top:10px;justify-content:center">    <a class="btn email" href="photos.html">See more photos</a>  </div>
+</section>
+
+  <section class="section" id="request">
+    <h2 class="center">Request a Delivery</h2>
+    <div class="form-card" style="margin-top:10px">
+      <form id="delivery-form" class="form-grid">
+        <div><label for="name">Name</label><input id="name" name="name" required placeholder="Your full name"></div>
+        <div><label for="phone">Phone</label><input id="phone" name="phone" inputmode="tel" required placeholder="(###) ###-####"></div>
+        <div><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com"></div>
+        <div><label for="pickup">Pickup Location</label><input id="pickup" name="pickup" required placeholder="e.g., Charleston, SC"></div>
+        <div><label for="dropoff">Delivery Location</label><input id="dropoff" name="dropoff" required placeholder="e.g., Augusta, GA"></div>
+        <div><label for="size">Container Size</label><select id="size" name="size" required><option value="">Select size</option><option>20'</option><option>40'</option></select></div>
+        <div><label for="notes">Notes (optional)</label><textarea id="notes" name="notes" placeholder="Gate code, site access notes, preferred time window…"></textarea></div>
+        <div class="btns" style="justify-content:center">
+          <button class="btn red" type="submit">Submit Request</button>
+          <a class="btn blue" href="sms:+17067999923">Text Us</a>
+          <a class="btn email" href="mailto:FurtherHauling@gmail.com">Email Us</a>
+        </div>
+        <small style="color:#666;display:block;text-align:center">We’ll confirm by text or phone. No spam — ever.</small>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="container"><p>© 2025 Further Hauling, LLC · Augusta, GA · <a href="tel:+17067999923">Call/Text</a></p></div></footer>
+</body></html>
