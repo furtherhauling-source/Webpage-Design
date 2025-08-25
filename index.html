@@ -110,12 +110,16 @@
   <section class="section" id="request">
     <h2 class="center">Request a Delivery</h2>
     <div class="form-card" style="margin-top:10px">
-      <form id="delivery-form" class="form-grid">
+     <form name="Request Delivery" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="delivery-form" class="form-card">
+  <input type="hidden" name="form-name" value="Request Delivery" />
+  <p style="display:none">
+    <label>Don’t fill this out: <input name="bot-field" /></label>
+  </p>
         <div><label for="name">Name</label><input id="name" name="name" required placeholder="Your full name"></div>
         <div><label for="phone">Phone</label><input id="phone" name="phone" inputmode="tel" required placeholder="(###) ###-####"></div>
         <div><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com"></div>
         <div><label for="pickup">Pickup Location</label><input id="pickup" name="pickup" required placeholder="e.g., Charleston, SC"></div>
-        <div><label for="dropoff">Delivery Location</label><input id="dropoff" name="dropoff" required placeholder="e.g., Augusta, GA"></div>
+       <button type="submit" class="btn red">Submit Request</button>
         <div><label for="size">Container Size</label><select id="size" name="size" required><option value="">Select size</option><option>20'</option><option>40'</option></select></div>
         <div><label for="notes">Notes (optional)</label><textarea id="notes" name="notes" placeholder="Gate code, site access notes, preferred time window…"></textarea></div>
         <div class="btns" style="justify-content:center">
