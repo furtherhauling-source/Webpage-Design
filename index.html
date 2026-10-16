@@ -128,7 +128,7 @@
 </section>
 
   <section class="section" id="request">
-    <h2 class="center">Request a Delivery</h2>
+   <h2 class="center">Request a Container or Delivery Quote</h2>
     <div class="form-card" style="margin-top:10px">
 <form name="Request Delivery"
       method="POST"
@@ -143,7 +143,14 @@
        <div><label for="name">Name</label><input id="name" name="name" required placeholder="Your full name"></div>
 <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" inputmode="tel" required placeholder="(###) ###-####"></div>
 <div><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com"></div>
-
+<div>
+  <label for="request-type">What do you need?</label>
+  <select id="request-type" name="request-type" required>
+    <option value="">Select an option</option>
+    <option value="Buy a Container">Buy a Container</option>
+    <option value="Delivery Only">Delivery Only</option>
+  </select>
+</div>
 <div><label for="pickup">Pickup Location</label><input id="pickup" name="pickup" required placeholder="e.g., Charleston, SC"></div>
 
 <!-- NEW: Drop-off Location -->
