@@ -151,11 +151,27 @@
     <option value="Delivery Only">Delivery Only</option>
   </select>
 </div>
-<div><label for="pickup">Pickup Location</label><input id="pickup" name="pickup" required placeholder="e.g., Charleston, SC"></div>
+<div>
+  <label for="pickup">Pickup Location (delivery-only requests)</label>
+  <input id="pickup" name="pickup" placeholder="Leave blank if buying a container">
+</div>
 
 <!-- NEW: Drop-off Location -->
 <div><label for="dropoff">Drop-off Location</label><input id="dropoff" name="dropoff" required placeholder="e.g., Charlotte, NC"></div>
+<div>
+  <label for="delivery-zip">Delivery ZIP Code</label>
+  <input id="delivery-zip" name="delivery-zip" inputmode="numeric" autocomplete="shipping postal-code" required placeholder="e.g., 30909">
+</div>
 
+<div>
+  <label for="condition">Preferred Condition (container buyers)</label>
+  <select id="condition" name="condition">
+    <option value="">Not sure / Not applicable</option>
+    <option>New</option>
+    <option>Cargo Worthy</option>
+    <option>Wind &amp; Water Tight</option>
+  </select>
+</div>
 <div><label for="size">Container Size</label>
   <select id="size" name="size" required>
     <option value="">Select size</option>
